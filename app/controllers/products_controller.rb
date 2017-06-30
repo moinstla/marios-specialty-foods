@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @pop_products = Product.most_reviews
   end
 
   def show
