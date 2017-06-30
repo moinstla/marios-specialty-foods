@@ -6,13 +6,24 @@
   <% end %>
 </ul>
 
-<h1>Most Reviewed Products:</h1>
-<% if @pop_products != nil %>
+
+<h3>Most Recently Reviewed Products:</h3>
 <ul>
-  <% @pop_products.each do |product|%>
-    <li><%= link_to product.name, product_path(product)%></li>
+  <% @recent_products.each do |product|%>
+    <li><%= link_to product.name, product_path(product)%><br>
   <%end%>
 </ul>
-<%end%>
+
+
+<h1>Most Reviewed Products:</h1>
+<ul>
+
+
+  <% @review_products.each do |product|%>
+  <li><%= link_to product.name, product_path(product)%><br>
+  <%end%>
+</ul>
+
+
 
 <%= link_to "New Product", new_product_path %>
