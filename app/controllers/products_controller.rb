@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
     @products = Product.all
     @review_products = Product.most_reviews
     @recent_products = Product.most_recent
-    # @usa_products = Product.from_usa
+    @usa_products = Product.from_usa
   end
 
   def show

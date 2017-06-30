@@ -1,7 +1,7 @@
 class Product < ActiveRecord::Base
   has_many :reviews
 
-  scope :most_recent, -> { order(created_at: :desc).limit(3)}
+  scope :most_recent, -> { order(created_at: :desc).limit(3) }
 
   scope :most_reviews, -> {(
     select("products.name, products.id, count(reviews.id) as reviews_count")
@@ -10,7 +10,8 @@ class Product < ActiveRecord::Base
     .order("reviews_count DESC")
     .limit(5)
     )}
-  # scope :from_usa, -> { where(country: 'USA')}
+
+  scope :from_usa, -> { where(country: 'USA') }
 
   validates :name, :presence => true
   validates :cost, :presence => true
