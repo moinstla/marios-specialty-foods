@@ -9,6 +9,3 @@ describe 'visit product path, route to review details' do
     expect(page).to have_content review.author
   end
 end
-
-
-expect(page).to have_content 'Peaches'
