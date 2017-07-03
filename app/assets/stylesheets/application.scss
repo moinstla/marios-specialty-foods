@@ -1,15 +1,64 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- */
- /*// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"*/
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+ .nav {
+   width: 100%;
+   background-image: url("background.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 350px;
+   position: relative;
+   border-bottom: solid black 10px;
+}
+
+.nav a {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  font-size: 100px;
+  color: #cecece;
+  background-color:rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+body {
+  border: solid black 10px;
+  padding-bottom: 100%;
+  background-color: #181e1c;
+  color: #345147;
+  font-family: 'PT Serif', serif;
+}
+
+
+.all ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.links li {
+  font-size: 15px;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  float: right;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+
+}
+
+a {
+  color: #345147;
+  font-size: 20px;
+}
+
+hr {
+  border: 1px solid black;
+}

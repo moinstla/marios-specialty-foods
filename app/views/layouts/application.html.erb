@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MariosFoodProducts</title>
+    <title>Marios Specialty Food Products</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
   </head>
-
   <body>
+    <div class="nav">
+      <h1><%= link_to "Mario's Specialty Foods", root_path%></h1>
+    </div>
     <div class="container">
       <%= yield %>
     </div>
