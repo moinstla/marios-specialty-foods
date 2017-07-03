@@ -8,7 +8,7 @@
    background-repeat: no-repeat;
    height: 350px;
    position: relative;
-   border-bottom: solid black 10px;
+   margin-bottom: 20px;
 }
 
 .nav a {
@@ -24,13 +24,16 @@
 }
 
 body {
-  border: solid black 10px;
-  padding-bottom: 100%;
+  padding-bottom: 100px;
   background-color: #181e1c;
   color: #345147;
   font-family: 'PT Serif', serif;
 }
 
+h1, h2 {
+  color: black;
+  font-weight: bold;
+}
 
 .all ul {
     -moz-column-count: 2;
